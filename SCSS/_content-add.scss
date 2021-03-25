@@ -1,6 +1,2 @@
-@use "variables";
-@use "methods";
-
-body {
-    background-color: cyan;
-}
+@import "variables";
+@import "methods";

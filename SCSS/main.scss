@@ -1,7 +1,4 @@
-@use 'header';
-@use "content-add";
-@use "content-show";
-
-// body {
-//     background-color: darkblue;
-// }
+@import "body";
+@import "header";
+@import "content-add";
+@import "content-show";

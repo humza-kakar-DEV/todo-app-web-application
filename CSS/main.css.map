@@ -1,8 +1,18 @@
 {
     "version": 3,
-    "mappings": "AAAA,IAAI,CAAJ,QAAI;AACJ,IAAI,CAAJ,aAAI;AACJ,IAAI,CAAJ,cAAI",
+    "mappings": "ACGA,AAAA,IAAI,CAAC;EACD,MAAM,EAAE,GAAG;EACX,OAAO,EAAE,GAAG;CACf;;ACHD,AAAA,OAAO,CAAC;ECCA,gBAAgB,EDAE,KAAK;EAE3B,QAAQ,EAAE,MAAM;CAMnB;;AATD,AAKI,OALG,CAKH,eAAe,CAAF;ECNT,KAAK,EDOiB,KAAK;EAC3B,UAAU,EAAE,MAAM;CACrB",
     "sources": [
-        "../SCSS/main.scss"
+        "../SCSS/main.scss",
+        "../SCSS/_body.scss",
+        "../SCSS/_header.scss",
+        "../SCSS/_methods.scss",
+        "../SCSS/_variables.scss",
+        "../SCSS/_content-add.scss",
+        "../SCSS/_variables.scss",
+        "../SCSS/_methods.scss",
+        "../SCSS/_content-show.scss",
+        "../SCSS/_variables.scss",
+        "../SCSS/_methods.scss"
     ],
     "names": [],
     "file": "main.css"

@@ -1,10 +1,13 @@
-body {
-    background-color: cyan;
-}
+@import "methods";
+@import "variables";
 
-header-class {
+.header {
+    @include change-color(black , background);
 
-    // @include methods.change-background-color(variables.$header-color);
+    overflow: hidden;
 
-    background-color: red;
+    #{&}-heading {
+        @include change-color(white , text);
+        text-align: center;
+    }
 }

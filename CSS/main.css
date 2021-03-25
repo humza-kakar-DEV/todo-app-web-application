@@ -1,4 +1,15 @@
-@use 'header';
-@use "content-add";
-@use "content-show";
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.header {
+  background-color: black;
+  overflow: hidden;
+}
+
+.header .header-heading {
+  color: white;
+  text-align: center;
+}
 /*# sourceMappingURL=main.css.map */

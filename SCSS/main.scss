@@ -1,4 +1,14 @@
-@import "body";
-@import "header";
-@import "content-add";
-@import "content-show";
+@import "./COMPONENTS/body";
+@import "./COMPONENTS/header";
+@import "./COMPONENTS/content-flex";
+@import "./COMPONENTS/card";
+@import "./COMPONENTS/content-show";
+@import "./ABSTRACTS/variables";
+@import "./ABSTRACTS/methods";
+@import "./COMPONENTS/input";
+@import "./COMPONENTS/textarea";
+@import "./COMPONENTS/submit";
+
+* , *::before , *::after {
+    // @include border-test(small);
+}

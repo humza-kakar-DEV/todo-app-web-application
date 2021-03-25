@@ -1,12 +1,11 @@
-@import "variables";
-@import "methods";
-
-* , *::before , *::after {
-}
+@import "../ABSTRACTS/variables";
+@import "../ABSTRACTS/methods";
 
 body {
     margin: 0px;
     padding: 0px;
     
     @include change-color(blueviolet , background);
+
+    @include size (100% , 100vh);
 }

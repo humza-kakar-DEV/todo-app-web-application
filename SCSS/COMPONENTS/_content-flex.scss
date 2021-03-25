@@ -1,0 +1,9 @@
+@import "../ABSTRACTS/methods";
+
+.content-flex {
+    @include flex (row , center , start);
+
+    margin-top: $content-margin-top;
+
+    @include size (100% , 50%);
+}

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../SCSS/methods.scss"
+    ],
+    "names": [],
+    "file": "methods.css"
+}

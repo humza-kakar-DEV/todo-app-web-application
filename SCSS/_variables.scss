@@ -1,2 +1,9 @@
 $header-color: black;
-$header-heading-text-color: white;
+
+$heading-color-text: white;
+
+$text-color: ("red": red, "blue": blue, "green": green);
+
+@function mapValue ($value-color) {
+    @return map.get($text-color, $value-color);
+}

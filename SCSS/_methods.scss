@@ -1,7 +1,16 @@
-@mixin change-color ($color , $type: text) {
-    @if $type == text {
+@mixin change-color ($color, $type: text) {
+    @if $type==text {
         color: $color;
-    } @else {
+    }
+
+    @else {
         background-color: $color;
     }
+}
+
+@mixin flex ($direction , $horizontal , $vertical) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $horizontal;
+    align-items: $vertical;
 }

@@ -1,7 +1,12 @@
+@import "variables";
+@import "methods";
+
 * , *::before , *::after {
 }
 
 body {
     margin: 0px;
     padding: 0px;
+    
+    @include change-color(blueviolet , background);
 }

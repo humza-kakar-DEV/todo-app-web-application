@@ -1,0 +1,18 @@
+@import "../ABSTRACTS/methods";
+@import "../ABSTRACTS/variables";
+@import "../ABSTRACTS/fonts";
+
+.header {
+    @include change-color($header-color, background);
+
+    overflow: hidden;
+
+    #{&}-heading {
+        @include change-color($heading-text-color, text);
+        text-align: center;
+
+        >h1 {
+            @include roboto-mono();
+        }
+    }
+}

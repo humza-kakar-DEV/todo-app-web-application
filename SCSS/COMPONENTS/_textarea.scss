@@ -1,0 +1,13 @@
+@import "../ABSTRACTS/variables";
+@import "../ABSTRACTS/methods";
+@import "../ABSTRACTS/fonts";
+
+.card {
+  textarea {
+    box-sizing: border-box !important;
+    margin-top: -5px;
+    resize: none;
+    box-sizing: border-box;
+    @include roboto-mono();
+  }
+}

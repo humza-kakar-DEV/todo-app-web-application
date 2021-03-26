@@ -1,0 +1,15 @@
+@import "./ABSTRACTS/variables";
+@import "./ABSTRACTS/methods";
+@import "./ABSTRACTS/fonts";
+@import "./COMPONENTS/body";
+@import "./COMPONENTS/header";
+@import "./COMPONENTS/content-flex";
+@import "./COMPONENTS/card";
+@import "./COMPONENTS/content-show";
+@import "./COMPONENTS/input";
+@import "./COMPONENTS/textarea";
+@import "./COMPONENTS/submit";
+
+* , *::before , *::after {
+    // @include border-test(small);
+}

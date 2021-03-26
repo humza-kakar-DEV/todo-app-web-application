@@ -1,0 +1,85 @@
+@import "../ABSTRACTS/variables";
+@import "../ABSTRACTS/methods";
+@import "../ABSTRACTS/fonts";
+
+.content-show {
+
+    @include size (50%, 100%);
+
+    // DESIGNING CONTENTS TITLES
+    > #{&}-header {
+
+        > .heading-container {
+
+            @include flex (row, space-around, center, 0px, 0px);
+
+            >li {
+
+                text-decoration: none;
+                list-style-type: none;
+
+                @include change-color($heading-text-color, text);
+
+                @include roboto-mono();
+            }
+        }
+    }
+
+    // DESIGNIGN LINE WHITE LINE SEPERATOR
+    #{&}-line-seperator {
+
+        @include size (100%, 3px);
+
+        @include change-color($line-seperator-color, background);
+    }
+
+
+    // DESIGNING DATA CARDS
+    #{&}-data-card-wrapper {
+
+        @include size (100% , 70px);
+
+        @include change-color($card-show-background-color , background);
+
+        @include border-radius (5px);
+
+        padding: auto 0px;
+        overflow: hidden;
+        margin-top: 20px;
+
+        > .data-card-container {
+
+            @include flex (row , space-around , center , 0px , 0px);
+
+            > li {
+
+                list-style-type: none;
+                text-decoration: none;
+
+                @include change-color($card-show-content-color , text);
+
+                @include roboto-mono ();
+
+                .delete-button {
+
+                    @include size (40px , 40px);
+
+                    @include change-color ($anchor-delete-background-color , background);
+
+                    @include border-radius (5px);
+
+                    @include flex (row , center , center , 0px , 0px);
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+
+                    > a {
+
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}

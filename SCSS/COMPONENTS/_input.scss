@@ -1,0 +1,14 @@
+@import "../ABSTRACTS/variables";
+@import "../ABSTRACTS/methods";
+@import "../ABSTRACTS/fonts";
+
+.card {
+    input[type=text] {
+        @include size(260px , 40px);
+        padding-left: 9px;
+        margin-top: 2px;
+        margin-bottom: 8px;
+        box-sizing: border-box;
+        @include roboto-mono();
+    }
+}

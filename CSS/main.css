@@ -50,6 +50,17 @@ body {
   box-shadow: 10px 10px 7px 10px #7723c5;
 }
 
+.card .card-submit-button {
+  text-decoration: none;
+  text-align: center;
+  padding-top: 4px;
+  width: 100%;
+  height: 25px;
+  border-radius: 5px;
+  background-color: lawngreen;
+  font-family: 'Roboto Mono', monospace;
+}
+
 .content-show {
   width: 50%;
   height: 100%;
@@ -139,18 +150,6 @@ body {
   margin-top: -5px;
   resize: none;
   box-sizing: border-box;
-  font-family: 'Roboto Mono', monospace;
-}
-
-.card input[type=submit] {
-  width: 100%;
-  height: 30px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  background-color: lawngreen;
-  border: 0 none;
-  cursor: pointer;
-  border-radius: 5px;
   font-family: 'Roboto Mono', monospace;
 }
 /*# sourceMappingURL=main.css.map */

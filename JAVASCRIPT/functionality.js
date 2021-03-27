@@ -1,7 +1,7 @@
 window.onload = () => {
-    const submitButton = document.querySelector(".card-submit-button");
+    const submitButtonHTML = document.querySelector(".card-submit-button");
 
-    submitButton.addEventListener("click", submitData());
+    submitButtonHTML.addEventListener("click", submitData());
 }
 
 submitData = () => {

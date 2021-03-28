@@ -62,9 +62,18 @@ htmlCard = () => {
     description.innerText = 'humza';
     description.style.fontFamily = 'Roboto Mono';
 
-    let deleteButton = document.createElement('button');
-    deleteButton.innerText = 'humza';
+    let deleteButton = document.createElement('p');
+    deleteButton.innerText = 'X';
+    deleteButton.style.width = '40px';
+    deleteButton.style.height = '30px';
+    deleteButton.style.boxSizing = 'borderBox';
+    deleteButton.style.borderRadius = '5px';
+    deleteButton.style.textAlign = 'center';
+    deleteButton.style.color = 'white';
+    deleteButton.style.paddingTop = '9px';
+
     deleteButton.style.fontFamily = 'Roboto Mono';
+    deleteButton.style.backgroundColor = 'red';
 
     titleContainer.append(title);
     descriptionContainer.append(description);

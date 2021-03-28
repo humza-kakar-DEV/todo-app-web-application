@@ -54,11 +54,11 @@ htmlCard = () => {
     deleteButtonContainer.style.justifyContent = 'center';
     deleteButtonContainer.style.alignItems = 'center';
 
-    let title = document.createElement('h5');
+    let title = document.createElement('p');
     title.innerText = 'humza';
     title.style.fontFamily = 'Roboto Mono';
 
-    let description = document.createElement('h5');
+    let description = document.createElement('p');
     description.innerText = 'humza';
     description.style.fontFamily = 'Roboto Mono';
 

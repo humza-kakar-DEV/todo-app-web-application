@@ -43,7 +43,7 @@ htmlCard = () => {
     descriptionContainer.style.flex = '1' , '0' , 'auto';
     descriptionContainer.style.display = 'flex';
     descriptionContainer.style.flexDirection = 'row';
-    descriptionContainer.style.justifyContent = 'center';
+    descriptionContainer.style.justifyContent = 'start';
     descriptionContainer.style.alignItems = 'center';
 
     let deleteButtonContainer = document.createElement('div');
@@ -55,11 +55,11 @@ htmlCard = () => {
     deleteButtonContainer.style.alignItems = 'center';
 
     let title = document.createElement('p');
-    title.innerText = 'humza';
+    title.innerText = 'title';
     title.style.fontFamily = 'Roboto Mono';
 
     let description = document.createElement('p');
-    description.innerText = 'humza';
+    description.innerText = 'description';
     description.style.fontFamily = 'Roboto Mono';
 
     let deleteButton = document.createElement('p');

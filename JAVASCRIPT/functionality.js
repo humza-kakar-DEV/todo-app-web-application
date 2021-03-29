@@ -26,7 +26,7 @@ htmlCard = () => {
     let container = document.createElement('div');
     container.style.width = '100%';
     container.style.height = '70px';
-    container.setAttribute('data-aos' , 'fade-left');
+    container.setAttribute('data-aos', 'fade-left');
     container.style.backgroundColor = 'white';
     container.style.display = 'flex';
     container.style.marginTop = '10px';
@@ -34,21 +34,21 @@ htmlCard = () => {
     container.style.borderRadius = '5px';
 
     let titleContainer = document.createElement('div');
-    titleContainer.style.flex = '1' , '0' , 'auto';
+    titleContainer.style.flex = '1', '0', 'auto';
     titleContainer.style.display = 'flex';
     titleContainer.style.flexDirection = 'row';
     titleContainer.style.justifyContent = 'center';
     titleContainer.style.alignItems = 'center';
 
     let descriptionContainer = document.createElement('div');
-    descriptionContainer.style.flex = '1' , '0' , 'auto';
+    descriptionContainer.style.flex = '1', '0', 'auto';
     descriptionContainer.style.display = 'flex';
     descriptionContainer.style.flexDirection = 'row';
     descriptionContainer.style.justifyContent = 'start';
     descriptionContainer.style.alignItems = 'center';
 
     let deleteButtonContainer = document.createElement('div');
-    deleteButtonContainer.style.flex = '1' , '0' , 'auto';
+    deleteButtonContainer.style.flex = '1', '0', 'auto';
     deleteButtonContainer.style.boxSizing = 'borderBox';
     deleteButtonContainer.style.display = 'flex';
     deleteButtonContainer.style.flexDirection = 'row';

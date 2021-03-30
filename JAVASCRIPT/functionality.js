@@ -55,6 +55,7 @@ htmlCard = (titleText, descriptionText) => {
     container.style.width = '100%';
     container.style.height = '70px';
     container.setAttribute('data-aos', 'fade-left');
+    container.setAttribute('data-aos-duration', '1500');
     container.style.backgroundColor = 'white';
     container.style.display = 'flex';
     container.style.marginTop = '10px';

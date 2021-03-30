@@ -1,28 +1,56 @@
 const submitButtonHTML = document.querySelector(".card-submit-button");
-let items = [];
+
+window.onload = () => {
+    createCard('onLoad');
+}
 
 submitButtonHTML.addEventListener("click", () => {
     let title = document.querySelector(".title").value;
     let description = document.querySelector(".description").value;
 
-    createDataCard();
-
-    addDataToLocalStorage(title, description);
+    addLocalStorage(title, description);
 });
 
-addDataToLocalStorage = (title, description) => {
-    items.push(title, description);
-    localStorage.setItem('data', JSON.stringify(items));
-    let show = localStorage.getItem('data');
-    console.log(show);
+addLocalStorage = (titleText, descriptionText) => {
+    if (localStorage.getItem('dataSet') == null) {
+        data = [];
+        data.push([titleText, descriptionText]);
+        localStorage.setItem('dataSet', JSON.stringify(data));
+        createCard('onProcess', data);
+    } else {
+        interfaceData = []
+        interfaceData.push([titleText, descriptionText]);
+        createCard('onProcess', interfaceData);
+        localStorageData = localStorage.getItem('dataSet');
+        data = JSON.parse(localStorageData);
+        data.push([titleText, descriptionText]);
+        localStorage.setItem('dataSet', JSON.stringify(data));
+    }
 }
 
-createDataCard = () => {
+createCard = (type, cardData = []) => {
+    switch (type) {
+        case 'onLoad':
+            data = [];
+            data = Array.from(JSON.parse(localStorage.getItem('dataSet')));
+            data.forEach((element, index) => {
+                htmlCard(element[0], element[1]);
+            });
+            break;
+        case 'onProcess':
+            data = cardData;
+            console.log(data);
+            data.forEach((element, index) => {
+                htmlCard(element[0], element[1]);
+                console.log(`${index} ${element[0]} ${element[1]}`);
+            });
+            break;
+    }
+}
+
+htmlCard = (titleText, descriptionText) => {
     let contentShow = document.querySelector('.content-show');
-    contentShow.append(htmlCard());
-}
 
-htmlCard = () => {
     let container = document.createElement('div');
     container.style.width = '100%';
     container.style.height = '70px';
@@ -56,11 +84,11 @@ htmlCard = () => {
     deleteButtonContainer.style.alignItems = 'center';
 
     let title = document.createElement('p');
-    title.innerText = 'title';
+    title.innerText = titleText;
     title.style.fontFamily = 'Roboto Mono';
 
     let description = document.createElement('p');
-    description.innerText = 'description';
+    description.innerText = descriptionText;
     description.style.fontFamily = 'Roboto Mono';
 
     let deleteButton = document.createElement('p');
@@ -84,5 +112,5 @@ htmlCard = () => {
     container.append(descriptionContainer);
     container.append(deleteButtonContainer);
 
-    return container;
+    contentShow.append(container);
 }
